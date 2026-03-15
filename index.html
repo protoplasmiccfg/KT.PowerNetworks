@@ -1,139 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KT.PowerNetworks</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- PWA manifest -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#004080">
+<title>KT.PowerNetworks</title>
 
-  <script>
-    // Register service worker
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(reg => console.log('Service Worker registered!', reg))
-          .catch(err => console.log('Service Worker registration failed:', err));
-      });
-    }
-  </script>
+<meta name="description" content="KT.PowerNetworks - Reliable electricity grid solutions">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b3d91">
+
+<script defer src="script.js"></script>
 </head>
+
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container header-container">
-      <div class="logo">KT.PowerNetworks</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#stats">Stats</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#training">Training</a></li>
-          <li><a href="#more">More</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h1>KT.PowerNetworks</h1>
-      <p>Reliable and modern electricity grid solutions.</p>
-      <a href="#training" class="cta-btn">Study Resources</a>
-    </div>
-  </section>
+<header class="header">
 
-  <!-- Services -->
-  <section id="services" class="services container">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <img src="A.png" alt="Installing HV Cabinets">
-        <div class="card-overlay"><h3>Installing HV Cabinets</h3></div>
-      </div>
-      <div class="card">
-        <img src="B.png" alt="Substation Construction">
-        <div class="card-overlay"><h3>Substation Construction</h3></div>
-      </div>
-      <div class="card">
-        <img src="C.png" alt="Power Generation & Maintenance">
-        <div class="card-overlay"><h3>Power Generation & Maintenance</h3></div>
-      </div>
-    </div>
-  </section>
+<div class="container nav">
 
-  <!-- Stats -->
-  <section id="stats" class="stats container">
-    <h2>Our Impact</h2>
-    <div class="energy-meter">
-      <div class="meter-bar"><div class="meter-fill" id="meterFill"></div></div>
-    </div>
-    <div class="stats-counters">
-      <div class="stat"><h3>0+</h3><p>Customers Served</p></div>
-      <div class="stat"><h3>1.3KV</h3><p>Distributed Energy</p></div>
-      <div class="stat"><h3>2+</h3><p>Cities Covered</p></div>
-    </div>
-  </section>
+<div class="logo">KT.Power<span>Networks</span></div>
 
-  <!-- About -->
-  <section id="about" class="about container">
-    <h2>About KT.PowerNetworks</h2>
-    <p>
-      Delivering safe, reliable, modern electricity solutions. UK-standard compliant training supports all operations.
-    </p>
-  </section>
+<nav>
+<a href="#services">Services</a>
+<a href="#impact">Impact</a>
+<a href="#training">Training</a>
+<a href="#about">About</a>
+</nav>
 
-  <!-- Training / Study Resources -->
-  <section id="training" class="services container">
-    <h2>Training & Study Resources</h2>
+</div>
 
-    <div class="service-cards">
-      <div class="card no-image">
-        <div class="card-overlay">
-          <h3>Official Qualification</h3>
-          <a href="https://www.cityandguilds.com/qualifications-and-apprenticeships/building-services-industry/electrical-installation/2365-electrotechnical-craft" target="_blank">City & Guilds 2365</a>
-        </div>
-      </div>
-      <div class="card no-image">
-        <div class="card-overlay">
-          <h3>Level 2 Units</h3>
-          <ul>
-            <li><a href="https://ntcstudents.co.uk/download/PAWs/2365-201.pdf">Unit 201 – Health & Safety</a></li>
-            <li><a href="https://ntcstudents.co.uk/download/PAWs/2365-202.pdf">Unit 202 – Electrical Science</a></li>
-            <li><a href="https://ntcstudents.co.uk/download/PAWs/2365-203.pdf">Unit 203 – Installation Tech</a></li>
-            <li><a href="https://ntcstudents.co.uk/download/PAWs/2365-204.pdf">Unit 204 – Testing</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="card no-image">
-        <div class="card-overlay">
-          <h3>Level 3 Units</h3>
-          <ul>
-            <li><a href="https://ntcstudents.co.uk/download/PAWs/2365-301.pdf">Unit 301 – Installation</a></li>
-            <li><a href="https://ntcstudents.co.uk/download/PAWs/2365-302.pdf">Unit 302 – Science</a></li>
-            <li><a href="https://ntcstudents.co.uk/download/PAWs/2365-304.pdf">Unit 304 – Testing</a></li>
-            <li><a href="https://ntcstudents.co.uk/download/PAWs/2365-305.pdf">Unit 305 – Design</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+</header>
 
-  <!-- More / RP -->
-  <section id="more" class="contact container">
-    <h2>Roleplay & Professional Simulation</h2>
-    <p>Simulated grids using real-world UK standards, preparing professionals for live operations.</p>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 KT.PowerNetworks. All rights reserved.</p>
-  </footer>
+<section class="hero">
 
-  <script src="script.js"></script>
+<div class="hero-inner container">
+
+<h1>Powering Modern Infrastructure</h1>
+
+<p>
+Reliable electricity networks and professional training built on UK industry standards.
+</p>
+
+<a class="primary-btn" href="#training">Study Resources</a>
+
+</div>
+
+</section>
+
+
+<section id="services" class="section container">
+
+<h2>Our Services</h2>
+
+<div class="grid-3">
+
+<div class="service-card">
+
+<img src="A.png">
+
+<h3>HV Cabinet Installation</h3>
+
+<p>High voltage infrastructure deployment and commissioning.</p>
+
+</div>
+
+<div class="service-card">
+
+<img src="B.png">
+
+<h3>Substation Construction</h3>
+
+<p>Design and installation of distribution substations.</p>
+
+</div>
+
+<div class="service-card">
+
+<img src="C.png">
+
+<h3>Grid Maintenance</h3>
+
+<p>Maintenance and reliability services for power networks.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="impact" class="impact">
+
+<div class="container">
+
+<h2>Network Impact</h2>
+
+<div class="meter">
+<div class="meter-fill" id="meter"></div>
+</div>
+
+<div class="stats">
+
+<div>
+<h3>0+</h3>
+<p>Customers</p>
+</div>
+
+<div>
+<h3>1.3KV</h3>
+<p>Energy Distribution</p>
+</div>
+
+<div>
+<h3>2+</h3>
+<p>Cities</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="training" class="section container">
+
+<h2>Training Resources</h2>
+
+<div class="grid-3">
+
+<div class="training-card">
+
+<h3>Qualification</h3>
+
+<a href="https://www.cityandguilds.com/qualifications-and-apprenticeships/building-services-industry/electrical-installation/2365-electrotechnical-craft" target="_blank">
+City & Guilds 2365
+</a>
+
+</div>
+
+<div class="training-card">
+
+<h3>Level 2 Units</h3>
+
+<a href="https://ntcstudents.co.uk/download/PAWs/2365-201.pdf">Unit 201</a>
+<a href="https://ntcstudents.co.uk/download/PAWs/2365-202.pdf">Unit 202</a>
+<a href="https://ntcstudents.co.uk/download/PAWs/2365-203.pdf">Unit 203</a>
+<a href="https://ntcstudents.co.uk/download/PAWs/2365-204.pdf">Unit 204</a>
+
+</div>
+
+<div class="training-card">
+
+<h3>Level 3 Units</h3>
+
+<a href="https://ntcstudents.co.uk/download/PAWs/2365-301.pdf">Unit 301</a>
+<a href="https://ntcstudents.co.uk/download/PAWs/2365-302.pdf">Unit 302</a>
+<a href="https://ntcstudents.co.uk/download/PAWs/2365-304.pdf">Unit 304</a>
+<a href="https://ntcstudents.co.uk/download/PAWs/2365-305.pdf">Unit 305</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about" class="about">
+
+<div class="container">
+
+<h2>About KT.PowerNetworks</h2>
+
+<p>
+KT.PowerNetworks delivers safe, reliable, and modern electricity network solutions.
+Our training resources follow UK industry standards to prepare engineers
+for real-world electrical infrastructure environments.
+</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 KT.PowerNetworks</p>
+
+</footer>
+
 </body>
 </html>
