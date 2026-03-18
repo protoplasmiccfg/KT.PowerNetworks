@@ -8,11 +8,11 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       category: "utility/management",
       badge: "Utility",
-      version: "Pack",
+      version: "App",
       name: "JobForce FS",
       description:
         "A Way to simply make it easier to keep your jobs organised and secured!",
-      meta: ["Training support", "Free access", "PDF resources"],
+      meta: ["Utilty", "Free access", "Management"],
       primaryLabel: "Download",
       primaryHref: "https://drive.google.com/file/d/1zKKIZiLSgGlTcXfYUIhLSzoaFr43gZIt/view?usp=drive_link",
       secondaryLabel: "Details",
