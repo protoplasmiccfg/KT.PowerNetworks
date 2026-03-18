@@ -6,10 +6,10 @@ window.addEventListener("DOMContentLoaded", () => {
   // Add or edit software here. Each object creates one marketplace card.
   const softwareItems = [
     {
-      category: "utility/management",
+      category: "utility",
       badge: "Utility",
       version: "App",
-      name: "JobForce FS",
+      name: "JobForce FS v1.3",
       description:
         "A Way to simply make it easier to keep your jobs organised and secured!",
       meta: ["Utilty", "Free access", "Management"],
